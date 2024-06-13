@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('../detec/fontes/Inter-Regular.ttf') format('truetype');
+}
+
+.background-image {
+  background-color:#6C6A6A;
+  background-image: url(../detec/imagens/PLANO\ DE\ FUNDO.png);
+  background-size: cover; 
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container img:first-child {
+  margin-right: auto;
+}
+
+.container .usuario {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.menuUser {
+  display: none;
+  position: absolute;
+  top: 6px;
+  background-color: #5e5e5e;
+  border: #5e5e5e;
+  width: 4%;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.input-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #5E5E5E;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.input-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.overlay.visible {
+  display: block;
+}
+
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+#addPubli {
+  background-color: rgba(94, 94, 94, 0.38);
+  width: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 13px;
+  margin: 10px auto;
+  margin-top: 30px;
+}
+
+#addPublis{
+  color: white;
+  background-color: #5e5e5e;
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 13px;
+  margin: 15px auto;
+  flex-direction: column;
+  word-break: break-all;
+}
+
+.introducao{
+  padding: 10px;
+  margin: 50px auto;
+  width: 30%;
+  text-align: center;
+  color: white;
+}
+
+.introducao h1{
+  margin: 10px;
+}
+
+.botaoDelete{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.Choro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+.Choro .content {
+  text-align: center; 
+  color:rgb(255, 255, 255);
+  font-weight: 'inter';
+}
+
+.modal-content{
+  border-radius: 30px;
+  background-color: #6C6A6A;
+}
+
+.modal-header{
+  background-color: #6C6A6A;
+  color: white;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.modal-header .modal-title{
+  margin-left: 37%;
+}
+
+.modal-header span{
+  color:white;
+}
+
+.modal-body{
+  background-color: #6C6A6A;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.modal-body .form-group #message-text{
+  resize: none;
+}
+
+.input-with-image{
+  background-color: #FF0000;
+  background-image: url(./imagens/LIXEIRA.png);
+  background-size: cover;
+  border: none;
+  width: 30px;
+  height: 29px;
+  border-radius: 60%;
+  margin-left: 35vw;
+}
+
+.banir-botao{
+  background-color: #FF0000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+.banir-botao:hover{
+  background-color: white;
+  color: #FF0000;
+}
+
+.foto-perfil{
+  background-image: url(./imagens/usuario.png);
+  
+}
